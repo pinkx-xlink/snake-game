@@ -111,3 +111,7 @@ function control(e) {
     }
 }
 
+up.addEventListener("click", () => (direction = -width));
+bottom.addEventListener("click", () => (direction = +width));
+left.addEventListener("click", () => (direction = -1));
+right.addEventListener("click", () => (direction => (direction = 1));)

@@ -63,3 +63,7 @@ function moveSnake(squares) {
     eatApple(squares, tail);
     squares[currentSnake[0]].classList.add("snake");
 }
+
+function checkForHits(squares) {
+    
+}

@@ -118,5 +118,8 @@ right.addEventListener("click", () => (direction => (direction = 1));)
 
 
 function replay() {
-    
+    grid.innerHTML = "";
+    createBoard();
+    startGame();
+    popup.style.display = "none";
 }

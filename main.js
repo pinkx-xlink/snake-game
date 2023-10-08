@@ -77,3 +77,7 @@ function checkForHits(squares) {
         return false;
     }
 }
+
+function eatApple(squares, tail) {
+    
+}

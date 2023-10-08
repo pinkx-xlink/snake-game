@@ -33,7 +33,7 @@ function createBoard() {
 
 function startGame() {
     let squares = document.querySelectorAll(".grid div");
-    randomApple((squares);
+    randomApple(squares);
     //random apple
     direction = 1;
     scoreDisplay.innerHTML = score;

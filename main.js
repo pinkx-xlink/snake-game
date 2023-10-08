@@ -100,5 +100,14 @@ function randomApple(squares) {
 }
 
 function control(e) {
-    
+    if (e.keycode === 39) {
+        direction = 1; //right
+    } else if (e.keycode === 38) {
+        direction = -width; //snake goes 10 divs up when up arrow is used
+    } else if (e.keycode === 37) {
+        direction = -1; //left, snake goes left one div 
+    } else if (e.keycode === 40) {
+        direction = +width; //snake moves 10 divs down when down key is used
+    }
 }
+

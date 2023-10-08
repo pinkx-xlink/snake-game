@@ -98,3 +98,7 @@ function randomApple(squares) {
     } while (squares[appleIndex].classList.contains(snake));
     squares[appleIndex].classList.add("apple");
 }
+
+function control(e) {
+    
+}

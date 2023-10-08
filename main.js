@@ -22,3 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     startGame();
     playAgain.addEventListener("click", replay);
 });
+
+function createBoard() {
+    popup.computedStyleMap.display = "none";
+}

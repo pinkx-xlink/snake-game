@@ -30,3 +30,7 @@ function createBoard() {
         grid.appendChild(div);
     }
 }
+
+function startGame() {
+    
+}

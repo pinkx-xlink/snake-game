@@ -18,7 +18,7 @@ body {
         background: blue;
     }
     .apple {
-        background: yellow;
+        background: rgb(255, 0, 157);
         border-radius: 20px;
     }
     .popup {

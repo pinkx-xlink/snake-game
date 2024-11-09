@@ -22,6 +22,9 @@ body {
 .snake {
     background: blue;
 }
+#frog-img {
+    height: 30px;
+}
 .apple {
     background-image: url('./frog.png');
     height: 30px;

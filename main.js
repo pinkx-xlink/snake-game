@@ -18,7 +18,7 @@ let interval = 0;
 // let frog = document.querySelector(".frog");
 let frogImg = document.createElement('img');
 frogImg.src = './frog.png';
-frogImg.width = 20;
+frogImg.width = 30;
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -93,12 +93,13 @@ function eatfrog(squares, tail) {
         squares[tail].classList.add("snake");
         currentSnake.push(tail);
         randomfrog(squares);
-        //randomfrog.src = "./img/frog.png";
         score++;
         scoreDisplay.textContent = score;
         clearInterval(interval);
         intervalTime = intervalTime * speed;
         interval = setInterval(moveOutcome, intervalTime);
+
+        
     }
 }
 

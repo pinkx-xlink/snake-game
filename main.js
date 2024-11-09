@@ -85,11 +85,11 @@ function eatfrog(squares, tail) {
     if (squares[currentSnake[0]].classList.contains("frog")) {
         squares[currentSnake[0]].classList.remove("frogImg");
         document.querySelector('.frog').removeChild(frogImg);
+        randomfrog(squares);
         squares[tail].classList.add("snake");
         currentSnake.push(tail);
         score++;
         scoreDisplay.textContent = `Score: ${score}`;
-        randomfrog(squares);
         clearInterval(interval);
         intervalTime = intervalTime * speed;
         interval = setInterval(moveOutcome, intervalTime);
@@ -98,7 +98,7 @@ function eatfrog(squares, tail) {
 
 function randomfrog(squares) {
     do {
-        frogIndex = Math.floor(Math.random() * squares.length);
+        frogIndex = Math.floor(Math.random() * 100);
     } while (squares[frogIndex].classList.contains("snake"));
     squares[frogIndex].classList.add("frog");
     document.querySelector('.frog').appendChild(frogImg);

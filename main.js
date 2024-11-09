@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function createBoard() {
     popup.style.display = "none";
-    for (let i = 0; i < 10; i++) {
-        for (let j = 0; j < 10; j++) {
+    for (let c = 0; c < 10; c++) {
+        for (let r = 0; r < 10; r++) {
             let div = document.createElement("div");
             grid.appendChild(div);
         } 

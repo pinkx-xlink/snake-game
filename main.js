@@ -41,6 +41,8 @@ function createBoard() {
 function startGame() {
     let squares = document.querySelectorAll(".grid div");
     randomfrog(squares);
+    // attempt to add a few more frogs - does not work yet
+    // setInterval((randomfrog(squares)), 2000);
     document.querySelector('.frog').appendChild(frogImg);
     //frog.src = './frog.png';
     //random frog
@@ -93,9 +95,9 @@ function eatfrog(squares, tail) {
         document.querySelector('.frog').removeChild(frogImg);
         squares[tail].classList.add("snake");
         currentSnake.push(tail);
-        randomfrog(squares);
         score++;
         scoreDisplay.textContent = score;
+        randomfrog(squares);
         clearInterval(interval);
         intervalTime = intervalTime * speed;
         interval = setInterval(moveOutcome, intervalTime);
@@ -112,7 +114,10 @@ function randomfrog(squares) {
     // frog.src = "./frog.png"
     //document.querySelector('.frog').src = './frog.png';
     //frogIndex.src = './frog.png';
+    
 }
+
+
 
 document.onkeydown = control;
 

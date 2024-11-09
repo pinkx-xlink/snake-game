@@ -38,7 +38,7 @@ function startGame() {
     // attempt to add a few more frogs - does not work
     // setInterval((randomfrog(squares)), 2000);
     direction = 1;
-    scoreDisplay.innerHTML = score;
+    scoreDisplay.innerHTML = `Score: ${score}`;
     intervalTime = 1000;
     currentSnake = [2, 1, 0];
     currentIndex = 0;
@@ -87,7 +87,7 @@ function eatfrog(squares, tail) {
         squares[tail].classList.add("snake");
         currentSnake.push(tail);
         score++;
-        scoreDisplay.textContent = score;
+        scoreDisplay.textContent = `Score: ${score}`;
         randomfrog(squares);
         clearInterval(interval);
         intervalTime = intervalTime * speed;

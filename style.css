@@ -16,15 +16,15 @@ body {
     flex-wrap: wrap;
 }
 .grid div {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 .snake {
     background: blue;
 }
 .apple {
     background-image: url('./frog.png');
-    height: 20px;
+    height: 30px;
     background-color: aliceblue;
 }
 .popup {

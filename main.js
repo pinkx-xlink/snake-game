@@ -89,7 +89,7 @@ function checkForHits(squares) {
 
 function eatfrog(squares, tail) {
     if (squares[currentSnake[0]].classList.contains("frog")) {
-        squares[currentSnake[0]].classList.remove("frog");
+        squares[currentSnake[0]].classList.remove("frogImg");
         squares[tail].classList.add("snake");
         currentSnake.push(tail);
         randomfrog(squares);

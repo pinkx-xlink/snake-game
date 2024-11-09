@@ -8,14 +8,14 @@ let right = document.querySelector(".right");
 let up = document.querySelector(".top");
 let width = 10;
 let currentIndex = 0;
-let appleIndex = 0;
+let frogIndex = 0;
 let currentSnake = [2, 1, 0];
 let direction = 1;
 let score = 0;
 let speed = 0.8;
 let intervalTime = 0;
 let interval = 0;
-// let frog = document.querySelector(".apple");
+// let frog = document.querySelector(".frog");
 let frogImg = document.createElement('img');
 frogImg.src = './frog.png';
 frogImg.width = 20;
@@ -38,10 +38,10 @@ function createBoard() {
 
 function startGame() {
     let squares = document.querySelectorAll(".grid div");
-    randomApple(squares);
-    document.querySelector('.apple').appendChild(frogImg);
+    randomfrog(squares);
+    document.querySelector('.frog').appendChild(frogImg);
     //frog.src = './frog.png';
-    //random apple
+    //random frog
     direction = 1;
     scoreDisplay.innerHTML = score;
     intervalTime = 1000;
@@ -67,7 +67,7 @@ function moveSnake(squares) {
     squares[tail].classList.remove("snake");
     currentSnake.unshift(currentSnake[0] + direction);
     //movement ends here
-    eatApple(squares, tail);
+    eatfrog(squares, tail);
     squares[currentSnake[0]].classList.add("snake");
 }
 
@@ -85,13 +85,13 @@ function checkForHits(squares) {
     }
 }
 
-function eatApple(squares, tail) {
-    if (squares[currentSnake[0]].classList.contains("apple")) {
-        squares[currentSnake[0]].classList.remove("apple");
+function eatfrog(squares, tail) {
+    if (squares[currentSnake[0]].classList.contains("frog")) {
+        squares[currentSnake[0]].classList.remove("frog");
         squares[tail].classList.add("snake");
         currentSnake.push(tail);
-        randomApple(squares);
-        //randomApple.src = "./img/frog.png";
+        randomfrog(squares);
+        //randomfrog.src = "./img/frog.png";
         score++;
         scoreDisplay.textContent = score;
         clearInterval(interval);
@@ -100,16 +100,16 @@ function eatApple(squares, tail) {
     }
 }
 
-function randomApple(squares) {
+function randomfrog(squares) {
     do {
-        appleIndex = Math.floor(Math.random() * squares.length);
-    } while (squares[appleIndex].classList.contains("snake"));
-    squares[appleIndex].classList.add("apple");
+        frogIndex = Math.floor(Math.random() * squares.length);
+    } while (squares[frogIndex].classList.contains("snake"));
+    squares[frogIndex].classList.add("frog");
 
     // frog.appendChild(frogImg)
     // frog.src = "./frog.png"
-    //document.querySelector('.apple').src = './frog.png';
-    //appleIndex.src = './frog.png';
+    //document.querySelector('.frog').src = './frog.png';
+    //frogIndex.src = './frog.png';
 }
 
 function control(e) {

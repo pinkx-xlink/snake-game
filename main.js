@@ -2,10 +2,6 @@ let grid = document.querySelector(".grid");
 let popup = document.querySelector(".popup");
 let playAgain = document.querySelector(".playAgain")
 let scoreDisplay = document.querySelector(".scoreDisplay");
-// let left = document.querySelector(".left");
-// let bottom = document.querySelector(".bottom");
-// let right = document.querySelector(".right");
-// let up = document.querySelector(".top");
 let width = 10;
 let currentIndex = 0;
 let frogIndex = 0;
@@ -15,11 +11,9 @@ let score = 0;
 let speed = 0.8;
 let intervalTime = 0;
 let interval = 0;
-// let frog = document.querySelector(".frog");
 let frogImg = document.createElement('img');
 frogImg.src = './frog.png';
 frogImg.width = 30;
-
 
 document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("keyup", control);
@@ -43,9 +37,6 @@ function startGame() {
     randomfrog(squares);
     // attempt to add a few more frogs - does not work
     // setInterval((randomfrog(squares)), 2000);
-    
-    //frog.src = './frog.png';
-    //random frog
     direction = 1;
     scoreDisplay.innerHTML = score;
     intervalTime = 1000;
@@ -110,14 +101,7 @@ function randomfrog(squares) {
     } while (squares[frogIndex].classList.contains("snake"));
     squares[frogIndex].classList.add("frog");
     document.querySelector('.frog').appendChild(frogImg);
-    // frog.appendChild(frogImg)
-    // frog.src = "./frog.png"
-    //document.querySelector('.frog').src = './frog.png';
-    //frogIndex.src = './frog.png';
-    
 }
-
-
 
 document.onkeydown = control;
 
@@ -133,12 +117,6 @@ function control(e) {
         direction = +width; //snake moves 10 divs down when down key is used
     }
 }
-
-// up.addEventListener("click", () => (direction = -width));
-// bottom.addEventListener("click", () => (direction = +width));
-// left.addEventListener("click", () => (direction = -1));
-// right.addEventListener("click", () => (direction = 1));
-
 
 function replay() {
     grid.innerHTML = "";

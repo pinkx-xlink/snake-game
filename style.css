@@ -21,6 +21,8 @@ body {
 }
 .apple {
     background-image: url('./frog.png');
+    height: 20px;
+    background-color: aliceblue;
 }
 .popup {
     background: rgb(32,31,31);

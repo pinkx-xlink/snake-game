@@ -84,6 +84,7 @@ function eatApple(squares, tail) {
         squares[tail].classList.add("snake");
         currentSnake.push(tail);
         randomApple(squares);
+        //randomApple.src = "./img/frog.png";
         score++;
         scoreDisplay.textContent = score;
         clearInterval(interval);

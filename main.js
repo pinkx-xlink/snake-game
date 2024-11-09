@@ -41,9 +41,9 @@ function createBoard() {
 function startGame() {
     let squares = document.querySelectorAll(".grid div");
     randomfrog(squares);
-    // attempt to add a few more frogs - does not work yet
+    // attempt to add a few more frogs - does not work
     // setInterval((randomfrog(squares)), 2000);
-    document.querySelector('.frog').appendChild(frogImg);
+    
     //frog.src = './frog.png';
     //random frog
     direction = 1;
@@ -109,7 +109,7 @@ function randomfrog(squares) {
         frogIndex = Math.floor(Math.random() * squares.length);
     } while (squares[frogIndex].classList.contains("snake"));
     squares[frogIndex].classList.add("frog");
-
+    document.querySelector('.frog').appendChild(frogImg);
     // frog.appendChild(frogImg)
     // frog.src = "./frog.png"
     //document.querySelector('.frog').src = './frog.png';

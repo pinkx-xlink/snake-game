@@ -4,5 +4,16 @@ I followed this tutorial as a warm up to The Odin Project JavaScript Course: Kni
 
 11/8/24
 
+Today I revisited this project with the goal to make it look cleaner and have more functionality.
+I added some CSS, added arrow key functionality, and fixed some errors within the grid element. 
+Image sources:
 - Background image src: https://www.freepik.com/premium-vector/ground-seamless-pattern-soil-background-with-bones-skull-game-design_21427298.htm
 - Frog img: https://art.pixilart.com/6fb79cf28f19cdb.png
+
+TO-DO:
+- Add additional "enemies" to catch: mouse, small bird, egg
+- Add enemies to AVOID: bigger birds, owl, mongoose, cats
+- Add a screen before each new "level" telling player whether they should collect/avoid new elements
+- Increase speed after every few levels
+- Increase grid size after 15 levels
+- Add moving enemies that will chase the player (after 20ish levels)

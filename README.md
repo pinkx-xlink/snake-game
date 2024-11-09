@@ -17,3 +17,7 @@ TO-DO:
 - Increase speed after every few levels
 - Increase grid size after 15 levels
 - Add moving enemies that will chase the player (after 20ish levels)
+
+11/9/24
+I've worked out the basic bugs and have the game functioning smoothly! The frog disappears after the snake "eats" it, a new frog is placed, the score increments for each frog eaten, and the arrow keys all make the snake move as expected. 
+The only real issue left is that sometimes the frog will spawn in the same spot 3 times before being spawned in a new random square. That still needs more troubleshooting.

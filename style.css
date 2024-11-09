@@ -1,5 +1,5 @@
 body {
-    background-image: url('./img/soil-and-bones.jpg');
+    background-image: url('./soil-and-bones.jpg');
     background-size: 200px;
     
 }
@@ -20,7 +20,7 @@ body {
     background: blue;
 }
 .apple {
-    background-image: url('./img/frog.png');
+    background-image: url('./frog.png');
 }
 .popup {
     background: rgb(32,31,31);

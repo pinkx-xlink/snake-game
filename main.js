@@ -38,6 +38,7 @@ function startGame() {
     // attempt to add a few more frogs - does not work
     // setInterval((randomfrog(squares)), 2000);
     direction = 1;
+    score = 0;
     scoreDisplay.innerHTML = `Score: ${score}`;
     intervalTime = 1000;
     currentSnake = [2, 1, 0];

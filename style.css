@@ -11,6 +11,12 @@ h1 {
     font-style: italic;
     background-color: rgba(0, 128, 68, 0.589);
 }
+.scoreDisplay {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
 .grid {
     background-color: rgba(136, 89, 132, 0.76);
     width: 300px;

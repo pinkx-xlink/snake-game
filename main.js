@@ -112,14 +112,17 @@ function randomfrog(squares) {
     //frogIndex.src = './frog.png';
 }
 
+document.onkeydown = control;
+
 function control(e) {
-    if (e.keycode === 39) {
+    e = e || window.event;
+    if (e.keyCode == 39) {
         direction = 1; //right
-    } else if (e.keycode === 38) {
+    } else if (e.keyCode == 38) {
         direction = -width; //snake goes 10 divs up when up arrow is used
-    } else if (e.keycode === 37) {
+    } else if (e.keyCode == 37) {
         direction = -1; //left, snake goes left one div 
-    } else if (e.keycode === 40) {
+    } else if (e.keyCode == 40) {
         direction = +width; //snake moves 10 divs down when down key is used
     }
 }

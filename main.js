@@ -15,6 +15,11 @@ let score = 0;
 let speed = 0.8;
 let intervalTime = 0;
 let interval = 0;
+// let frog = document.querySelector(".apple");
+let frogImg = document.createElement('img');
+frogImg.src = './frog.png';
+frogImg.width = 20;
+
 
 document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("keyup", control);
@@ -34,6 +39,8 @@ function createBoard() {
 function startGame() {
     let squares = document.querySelectorAll(".grid div");
     randomApple(squares);
+    document.querySelector('.apple').appendChild(frogImg);
+    //frog.src = './frog.png';
     //random apple
     direction = 1;
     scoreDisplay.innerHTML = score;
@@ -98,6 +105,11 @@ function randomApple(squares) {
         appleIndex = Math.floor(Math.random() * squares.length);
     } while (squares[appleIndex].classList.contains("snake"));
     squares[appleIndex].classList.add("apple");
+
+    // frog.appendChild(frogImg)
+    // frog.src = "./frog.png"
+    //document.querySelector('.apple').src = './frog.png';
+    //appleIndex.src = './frog.png';
 }
 
 function control(e) {

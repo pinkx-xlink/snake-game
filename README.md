@@ -5,3 +5,4 @@ I followed this tutorial as a warm up to The Odin Project JavaScript Course: Kni
 11/8/24
 
 - Background image src: https://www.freepik.com/premium-vector/ground-seamless-pattern-soil-background-with-bones-skull-game-design_21427298.htm
+- Frog img: https://art.pixilart.com/6fb79cf28f19cdb.png

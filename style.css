@@ -1,5 +1,6 @@
 body {
-    background: rgb(163, 201, 158);
+    background-image: url('./soil-and-bones.jpg');
+    background-size: 200px;
 }
 
 .grid {
